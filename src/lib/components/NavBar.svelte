@@ -1,5 +1,8 @@
 <script>
 	let { data } = $props();
+
+//console.log("data.user.id= "+  data.user.name);
+
 </script>
 
 
@@ -8,10 +11,16 @@
     |
     <a href="/cars">Cars</a>
     
-    
+    <!--display booking-history if user log-in -->
+    {#if data?.isLoggedIn}
+    |
+    <a href="/book-history">Booking History</a>
+    {/if}
+
    <div class="user_info">
 		{#if data?.isLoggedIn}
-            <img src={data.user.image} alt="" class="profile_image">
+
+            <img src={data.user.image} alt={data.user.image} class="profile_image">
 			<strong>{data.user.name}</strong>
 
 			<form method="post" action="/logout">

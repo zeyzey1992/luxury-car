@@ -18,3 +18,10 @@ Stage 4=> For Booking Page
 --When the user selects dates, the system automatically calculates the number of days and the total price using JavaScript's getTime() method.
 --I implemented a "Place Order" button that shows a confirmation message with the car name, rental duration, and total price.
 --I used Svelte 5's `$state()` to make the price update reactively when dates change.
+
+Stage 5=> For Booking History
+--I created a booking history page that displays all cars booked by the logged-in user.
+--Bookings are stored in the browser's localStorage and retrieved when the page loads.
+--The page shows car image, name, color, rental dates, duration, and total price.
+--Users can clear their entire booking history with a "Clear History" button.
+--If no bookings exist, a friendly message with a link to browse cars is shown.

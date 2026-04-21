@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Mercedes S-Class",
+    "year": 2022,
+    "color": "White",
+    "price":200,
+    "image": "/images/cars/merc2022.jpeg",
+    "description": "Luxury sedan perfect for weddings and special events."
+  },
+  {
+    "id": 2,
+    "name": "Rolls Royce Phantom",
+    "year": 2021,
+    "color": "Black",
+    "price":400,
+    "image": "/images/cars/roys2021.jpeg",
+    "description": "Iconic luxury car for unforgettable moments."
+  },
+  {
+    "id": 3,
+    "name": "Bentley Continental",
+    "year": 2023,
+    "color": "Silver",
+    "price":500,
+    "image": "/images/cars/bentley.jpg",
+    "description": "Elegant and stylish, ideal for luxury hire."
+  },
+  {
+    "id": 4,
+    "name": "BMW 7 Series",
+    "year": 2022,
+    "color": "Blue",
+    "price":500,
+    "image": "/images/cars/bmwblue.jpeg",
+    "description": "Comfortable and sophisticated sedan for premium events."
+  },
+  {
+    "id": 5,
+    "name": "Audi A8",
+    "year": 2021,
+    "color": "Gray",
+    "price":350,
+    "image": "/images/cars/audi.webp",
+    "description": "Modern luxury with top performance for any occasion."
+  },
+  {
+    "id": 6,
+    "name": "Jaguar XJ",
+    "year": 2020,
+    "color": "Dark Green",
+    "price":600,
+    "image": "/images/cars/jaguar.jpg",
+    "description": "Perfect for weddings with a touch of elegance."
+  },
+  {
+    "id": 7,
+    "name": "Tesla Model S",
+    "year": 2022,
+    "color": "White",
+    "price":450,
+    "image": "/images/cars/tesla.jpeg",
+    "description": "Electric luxury car combining innovation and comfort."
+  },
+  {
+    "id": 8,
+    "name": "Rolls Royce Silver Cloud",
+    "year": 1960,
+    "color": "Silver",
+    "price":1000,
+    "image": "/images/cars/roys1960.jpg",
+    "description": "Classic luxury with timeless elegance."
+  },
+  {
+    "id": 9,
+    "name": "Cadillac Series 62",
+    "year": 1958,
+    "color": "Red",
+    "price":1300,
+    "image": "/images/cars/cadillac.jpeg",
+    "description": "Vintage classic perfect for weddings or photo shoots."
+  },
+  {
+    "id": 10,
+    "name": "Jaguar Mark II",
+    "year": 1962,
+    "color": "Dark Green",
+    "price":1250,
+    "image": "/images/cars/jaguar1962.jpg",
+    "description": "Elegant classic British luxury car."
+  },
+  {
+    "id": 11,
+    "name": "Lincoln Continental",
+    "year": 1965,
+    "color": "Black",
+    "price":1560,
+    "image": "/images/cars/lincon.jpeg",
+    "description": "Iconic American classic with style and comfort."
+  },
+  {
+    "id": 12,
+    "name": "Mercedes 300SL Gullwing",
+    "year": 1955,
+    "color": "Blue",
+    "price":1110,
+    "image": "/images/cars/mercedes1965.jpg",
+    "description": "Legendary classic sports car with iconic gullwing doors."
+  }
+]

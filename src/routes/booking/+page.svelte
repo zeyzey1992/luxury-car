@@ -10,12 +10,12 @@
     let startDate = $state('');
     let endDate = $state('');
     let days = $state(0);
-    let total = 0;
+    let total = $state(0);
     let message = $state('');
 
     let calcCount = 0;
 
-//    const calculate = () =>  {
+
     function calculate() {
         calcCount++;
         console.log("calculate() - number of calls = " + calcCount);
@@ -43,17 +43,36 @@
     }
     
     function placeOrder() {
-        alert("Thank you for choosing us");
-        if(!car){
-            message = "Sorry! Vehicle not found!!!!!";
-            return;
-        }
-        if (days > 0) {
-            message = `${car.name} - ${days} days = €${total}`;
-        } else {
-            message = " Please select dates!";
-        }
+    if (days <= 0) {
+        message = "❌ Please select dates first!";
+        return;
     }
+    if (!car) {
+        message = "❌ Car not found!";
+        return;
+    }
+    
+    let bookings = JSON.parse(localStorage.getItem('bookings') || '[]');
+    
+    bookings.push({
+        id: Date.now(),
+        carId: car.id,
+        carName: car.name,
+        carImage: car.image,
+        carColor: car.color,
+        startDate: startDate,
+        endDate: endDate,
+        days: days,
+        total: total,
+        bookedAt: new Date().toLocaleString()
+    });
+    
+    localStorage.setItem('bookings', JSON.stringify(bookings));
+    
+
+    window.location.href = '/book-history';
+}
+
 
 
     calculate();
@@ -77,6 +96,7 @@
         
         <hr/>
         
+        <form method="POST" action="?/book"></form>
         <label>
         Start Date
         <input type="date" bind:value={startDate} onchange={calculate}/>

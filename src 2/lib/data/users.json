@@ -1,0 +1,20 @@
+[
+	{
+		"name": "Zeynep",
+		"email": "zeynep@tud.ie",
+		"password": "password",
+		"balance": 100,
+		"category": "elite",
+		"role": "ROLE_ADMIN",
+		"image": "/images/bluepower.jpg"
+	},
+	{
+		"name": "Aleyna",
+		"email": "aleyna@gmail.com",
+		"password": "password",
+		"balance": 0,
+		"category": "bronze",
+		"role": "ROLE_MEMBER",
+		"image": "/images/orangepower.webp"
+	}
+]
