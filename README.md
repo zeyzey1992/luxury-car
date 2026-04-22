@@ -25,3 +25,9 @@ Stage 5=> For Booking History
 --The page shows car image, name, color, rental dates, duration, and total price.
 --Users can clear their entire booking history with a "Clear History" button.
 --If no bookings exist, a friendly message with a link to browse cars is shown.
+
+UPDATED
+--Implemented category-based discounts (Silver / Gold / Elite)
+--Switched back to localStorage-based booking system
+--Bookings are now stored directly in browser localStorage
+--Fixed booking failure issues caused by missing API routes 

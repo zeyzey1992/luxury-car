@@ -13,8 +13,53 @@
 		"email": "aleyna@gmail.com",
 		"password": "password",
 		"balance": 0,
-		"category": "bronze",
+		"category": "elite",
 		"role": "ROLE_MEMBER",
 		"image": "/images/orangepower.webp"
+	},
+	{
+		"name": "Ergunes",
+		"email": "ergunes@gmail.com",
+		"password": "password",
+		"balance": 50,
+		"category": "elite",
+		"role": "ROLE_MEMBER",
+		"image": "/images/mert.jpg"
+	},
+	{
+		"name": "Elif",
+		"email": "elif@gmail.com",
+		"password": "password",
+		"balance": 200,
+		"category": "gold",
+		"role": "ROLE_MEMBER",
+		"image": "/images/elif.jpg"
+	},
+	{
+		"name": "Burak",
+		"email": "burak@gmail.com",
+		"password": "password",
+		"balance": 20,
+		"category": "bronze",
+		"role": "ROLE_MEMBER",
+		"image": "/images/burak.jpg"
+	},
+	{
+		"name": "Selin",
+		"email": "selin@gmail.com",
+		"password": "password",
+		"balance": 150,
+		"category": "silver",
+		"role": "ROLE_MEMBER",
+		"image": "/images/selin.jpg"
+	},
+	{
+		"name": "Emre",
+		"email": "emre@gmail.com",
+		"password": "password",
+		"balance": 300,
+		"category": "elite",
+		"role": "ROLE_ADMIN",
+		"image": "/images/emre.jpg"
 	}
 ]

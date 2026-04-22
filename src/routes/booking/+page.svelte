@@ -1,9 +1,9 @@
 <script>
-    
-
-
+   
     let { data } =$props();
     let car = data.car;
+    let user = data.user;
+    let discountMessage = $state('');
 
    // console.log("car.id = " + car.id);
     
@@ -37,8 +37,27 @@
         
         let calc = end.getTime() - start.getTime();
         days = Math.ceil(calc/ (1000 * 3600 * 24));
+
+        let discount =0;
+        discountMessage = '';
+
+        if (user?.category === 'silver') {
+        discount = 0.05;
+        discountMessage = '🎉 Silver category discount applied: 5% off';
+    }
+
+        if (user?.category === 'gold') {
+        discount = 0.10;
+        discountMessage = '🏆 Gold category discount applied: 10% off';
+    }
+
+        if (user?.category === 'elite') {
+     discount = 0.20;
+        discountMessage = '👑 Elite category discount applied: 20% off';
+    }
         
-        total = car.price * days;
+        // @ts-ignore
+        total = car.price * days * (1 - discount);
         message='';        
     }
     
@@ -96,7 +115,7 @@
         
         <hr/>
         
-        <form method="POST" action="?/book"></form>
+        
         <label>
         Start Date
         <input type="date" bind:value={startDate} onchange={calculate}/>
@@ -109,6 +128,12 @@
         
         {#if days > 0}
             <div class="preview">{days} days = €{total}</div>
+
+            {#if discountMessage}
+            <div class="discount-msg">
+                {discountMessage}
+            </div>
+            {/if}
         {/if}
 
         <!-- <div class="pre-view">
@@ -167,6 +192,8 @@
         margin-top: 20px;
         padding: 12px;
         background: #f4d35e;
+        opacity: 1;
+        transition: 0.2s;
         border: none;
         border-radius: 5px;
         cursor: pointer;
@@ -191,4 +218,12 @@
     hr {
         margin: 20px 0;
     }
+    .discount-msg {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #4b3621;
+    background: gold;
+    padding: 5px;
+    border-radius: 5px;
+}
 </style>

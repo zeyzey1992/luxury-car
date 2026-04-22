@@ -23,6 +23,8 @@
             <img src={data.user.image} alt={data.user.image} class="profile_image">
 			<strong>{data.user.name}</strong>
 
+      <span class="balance">💰 €{data.user.balance}</span>
+
 			<form method="post" action="/logout">
 				<button>Logout</button>
 			</form>
@@ -75,8 +77,13 @@ button{
     border-radius: 2px;
     background-color: #F4D35E;
     color:#FDF6E3;
-    
-
+}
+.balance {
+    background: #8B5E3C;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
 </style>
