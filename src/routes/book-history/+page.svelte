@@ -1,5 +1,4 @@
 <script>
-    import { browser } from '$app/environment';
     
     let bookings = [];
     

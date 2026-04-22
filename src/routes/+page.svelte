@@ -27,7 +27,7 @@
 			loading = false;
 		}
 	}
-	getWeather(); // API çağrısını başlat
+	getWeather(); 
 </script>
 
 <section class="welcomePage">
