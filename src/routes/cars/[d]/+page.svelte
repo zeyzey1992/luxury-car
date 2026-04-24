@@ -17,7 +17,7 @@
         <p>Color: { car.color }</p>
         <strong>Price: {car.price}</strong>
         <p>{ car.description }</p>
-        <a href="/booking" class="btn">Book Now</a>
+        <a href="/booking?carId={car.id}" class="btn">Book Now</a>
       </div>
     </div>
   {:else}
