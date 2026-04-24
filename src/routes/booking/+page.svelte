@@ -52,7 +52,7 @@
     }
 
         if (user?.category === 'elite') {
-     discount = 0.20;
+        discount = 0.20;
         discountMessage = '👑 Elite category discount applied: 20% off';
     }
         

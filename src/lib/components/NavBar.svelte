@@ -11,11 +11,17 @@
     |
     <a href="/cars">Cars</a>
     
-    <!--display booking-history if user log-in -->
-    {#if data?.isLoggedIn}
-    |
-    <a href="/book-history">Booking History</a>
+    <!--Can not display booking-history if admin log-in -->
+    {#if data?.isLoggedIn && data?.user?.role !== 'ROLE_ADMIN'}
+        |
+        <a href="/book-history">📋 Booking History</a>
     {/if}
+
+   <!-- Only Admin Can See -->
+   {#if data?.user?.role === 'ROLE_ADMIN'}
+   |
+	 <a href="/admin">👑 Admin Panel</a>
+   {/if}
 
    <div class="user_info">
 		{#if data?.isLoggedIn}

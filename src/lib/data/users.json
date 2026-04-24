@@ -14,8 +14,8 @@
 		"password": "password",
 		"balance": 0,
 		"category": "elite",
-		"role": "ROLE_MEMBER",
-		"image": "/images/orangepower.webp"
+		"role": "ROLE_ADMIN",
+		"image": "/images/aleyna.png"
 	},
 	{
 		"name": "Ergunes",
@@ -23,8 +23,8 @@
 		"password": "password",
 		"balance": 50,
 		"category": "elite",
-		"role": "ROLE_MEMBER",
-		"image": "/images/mert.jpg"
+		"role": "ROLE_ADMIN",
+		"image": "/images/ergunes.png"
 	},
 	{
 		"name": "Elif",
@@ -33,7 +33,7 @@
 		"balance": 200,
 		"category": "gold",
 		"role": "ROLE_MEMBER",
-		"image": "/images/elif.jpg"
+		"image": "/images/elif.png"
 	},
 	{
 		"name": "Burak",
@@ -42,24 +42,24 @@
 		"balance": 20,
 		"category": "bronze",
 		"role": "ROLE_MEMBER",
-		"image": "/images/burak.jpg"
+		"image": "/images/burak.png"
 	},
 	{
-		"name": "Selin",
-		"email": "selin@gmail.com",
+		"name": "Huseyin",
+		"email": "huso@gmail.com",
 		"password": "password",
 		"balance": 150,
 		"category": "silver",
 		"role": "ROLE_MEMBER",
-		"image": "/images/selin.jpg"
+		"image": "/images/huso.png"
 	},
 	{
-		"name": "Emre",
-		"email": "emre@gmail.com",
+		"name": "Filiz",
+		"email": "filiz@gmail.com",
 		"password": "password",
 		"balance": 300,
 		"category": "elite",
 		"role": "ROLE_ADMIN",
-		"image": "/images/emre.jpg"
+		"image": "/images/annem.png"
 	}
 ]

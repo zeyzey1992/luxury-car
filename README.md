@@ -31,3 +31,9 @@ UPDATED
 --Switched back to localStorage-based booking system
 --Bookings are now stored directly in browser localStorage
 --Fixed booking failure issues caused by missing API routes 
+
+Stage 6=> Added admin panel on the nav bar
+--Admin panel only accessible by users with ROLE_ADMIN
+--I add 
+--View all user reservations from localStorage
+--View all registered users with account details
